@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre de la banda</th>
+            <th>Género musical</th>
+            <th>Notas importantes</th>
+        </tr>
+        <tr>
+            <td>Panic! at the Disco</td>
+            <td>pop rock, pop alternativo y rock alternativo</td>
+            <td>Mi banda favorita, su mejor canción es "Lying is the most fun a girl can have without taking her clothes off"</td>
+        </tr>
+        <tr>
+            <td>Slipknot</td>
+            <td>metal y metal alternativo</td>
+            <td>Su mejor canción es "Psychosocial"</td>
+        </tr>
+        <tr>
+            <td>Bauhaus</td>
+            <td>rock gótico y post-punk</td>
+            <td>Es una banda inccreíble y su mejor canción es "She's in Parties"</td>
+        </tr>
+    </table>
+</body>
+</html>

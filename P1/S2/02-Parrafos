@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title>Ej-2: Parrafos</title>
+</head>
+<body>
+    <p>Este es mi primer ejemplo de un párrafo. 
+        Mi nombre es Joana Gabriela.
+        Mis apellidos son Reis González.
+    </p>
+    <p>Este es mi segundo ejemplo de un párrafo.
+        Me gusta la música, leer y escribir.
+        Hablo varios idiomas.
+    </p>
+    <p>Este es mi tercer ejemplo de un párrafo,
+        el navegador hace que las lineas aparezcan juntas,
+        aunque haya varias y esten separadas por un ENTER.
+        Los espacios...        como la separación entre las lineas,
+        se eliminan también.
+    </p>
+</body>
+</html>
+

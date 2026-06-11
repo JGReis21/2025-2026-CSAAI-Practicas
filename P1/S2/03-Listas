@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej-3: Listas</title>
+</head>
+<body>
+    <h2>Lista ordenada: Pasos de receta</h2>
+    <ol>
+        <li>Conseguir ingredientes</li>
+        <li>Mezclar ingredientes secos en un bol</li>
+        <li>Incorporar ingredientes líquidos al bol y mezclar</li>
+        <li>Dejar por 2.5 minutos en el microondas</li>
+        <li>Sacar y comer</li>
+    </ol>
+    <h2>Lista no ordenada: Ingredientes</h2>
+    <ul>
+        <li>Leche</li>
+        <li>Harina</li>
+        <li>Azúcar</li>
+        <li>Sal</li>
+        <li>Polvo de Cacao</li>
+        <li>Levadura</li>
+        <li>Mantequilla</li>
+        <li>Huevos</li>
+        <li>Vainilla</li>
+    </ul>
+    <h2>Lista de definición: Ingredientes secos vs líquidos</h2>
+    <dl>
+        <dt>Ingredientes secos</dt>
+        <dd>Harina</dd>
+        <dd>Azúcar</dd>
+        <dd>Polvo de Cacao</dd>
+        <dd>Sal</dd>
+        <dd>Levadura</dd>
+        <dt>Ingredientes líquidos</dt>
+        <dd>Huevos</dd>
+        <dd>Mantequilla</dd>
+        <dd>Leche</dd>
+        <dd>Vainilla</dd>
+    </dl>
+
+</body>
+</html>
