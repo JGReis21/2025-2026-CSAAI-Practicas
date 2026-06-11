@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Starfighter Trench Run</title>
+  <link rel="stylesheet" href="retro-starfighter-trench-run.css">
+
+  <script src="js/config.js" defer></script>
+  <script src="js/background.js" defer></script>
+  <script src="js/trench.js" defer></script>
+  <script src="js/obstacles.js" defer></script>
+  <script src="js/player.js" defer></script>
+  <script src="js/effects.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>Retro Starfighter Trench Run</h1>
+      <p>
+        Una escena retro en canvas para simular el vuelo de una nave por una
+        trinchera wireframe a toda velocidad.
+      </p>
+    </header>
+
+    <section class="layout">
+      <section class="stage">
+        <canvas id="gameCanvas" width="900" height="520"></canvas>
+      </section>
+
+      <aside class="panel">
+        <div class="block">
+          <h2>Estado</h2>
+          <p id="state">Preparado para entrar en la trinchera</p>
+        </div>
+
+        <div class="block">
+          <h2>Controles</h2>
+          <ul>
+            <li><strong>← / A</strong>: mover a la izquierda</li>
+            <li><strong>→ / D</strong>: mover a la derecha</li>
+            <li><strong>↑ / W</strong>: subir</li>
+            <li><strong>↓ / S</strong>: bajar</li>
+            <li><strong>R</strong>: reiniciar la escena</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h2>Mecánica</h2>
+          <ul>
+            <li>La nave se mueve dentro de una zona limitada.</li>
+            <li>La trinchera avanza hacia el jugador.</li>
+            <li>Los obstáculos aparecen al fondo y se acercan.</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

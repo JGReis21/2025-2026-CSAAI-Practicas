@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brut y los Yelis en busca de la gema mágica</title>
+  <link rel="stylesheet" href="brut-yelis.css">
+  <script src="brut-yelis.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>Brut y los Yelis en busca de la gema mágica</h1>
+      <p>
+        Una pequeña simulación en canvas con varios personajes,
+        cada uno con su propia lógica.
+      </p>
+    </header>
+
+    <section class="layout">
+      <section class="stage">
+        <canvas id="gameCanvas" width="900" height="520"></canvas>
+      </section>
+
+      <aside class="panel">
+        <div class="block">
+          <h2>Estado</h2>
+          <p id="state">En espera</p>
+        </div>
+
+        <div class="block">
+          <h2>Controles</h2>
+          <div class="buttons">
+            <button id="relocateBtn">Mover gema</button>
+            <button id="resetBtn">Reiniciar</button>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2>Personajes</h2>
+          <ul>
+            <li><strong>Brut</strong>: líder del grupo</li>
+            <li><strong>Yeli 1</strong>: seguidor</li>
+            <li><strong>Yeli 2</strong>: impulsivo</li>
+            <li><strong>Yeli 3</strong>: despistado</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

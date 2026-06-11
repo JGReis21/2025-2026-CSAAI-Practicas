@@ -1,0 +1,25 @@
+/* Practicando CSS: Hola mundo oooootraaaa vez ... */
+
+body {
+    background-color: aquamarine;
+    color: #000080;
+}
+
+h1 {
+    font-size: 51px;
+    color: antiquewhite;
+    text-align: center; 
+}
+
+button {
+    border: 2px solid grey; 
+    padding: 20px;
+}
+
+#bclick {
+    margin: 0 auto;
+}
+
+#bnext {
+    text-align: center;
+}

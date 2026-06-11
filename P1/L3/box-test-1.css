@@ -1,0 +1,30 @@
+/* Ponemos a cero todas las propiedades del cuerpo */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Sin margen, sin relleno y sin borde              */
+body {
+  padding: 5px;
+  margin: 10px;
+  border: solid;
+  border-color: aquamarine;
+}
+
+/*  Propiedades de la caja del párrafo
+    Ponemos todo a cero, pero activamos el borde
+    para verlo. Y lo ponemos de color azul
+*/
+p {
+  margin: 10px;
+  padding:20px;
+  border:solid;
+  border-color: lightgreen;
+
+  text-align: center;
+  font-size: 26px;
+
+  width: 600px;
+  min-height: 100px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="html2.css">
+
+    <script src="html2.js" defer></script>
+
+    <title>Elementos de HTML segunda Parte</title>
+</head>
+<body>
+    <h1>Elementos de HTML segunda Parte</h1>
+
+<h2>Ej-1: Tipos de botones</h2>
+    <hr>
+    <h3>Tipo Button</h3>
+    <p> <input type="button" value="Boton" id="button"> <span id="button-test">Test</span></p>
+
+    <h3>Botón tipo imagen</h3>
+    <p> <input type="image" id="btimage" src="logo-urjc.png" alt="Logo urjc"> <span id="btimage-test">Test Imagen</span></p>
+    
+
+    <h3>Tipo Checkbox</h3>
+    <p> <span id="c1_test">c1</span> <input type="checkbox" id="checkbox1" > 
+        <span id="c2_test">c2</span> <input type="checkbox" id="checkbox2" checked> </p>
+
+    <h3>Tipo Radio</h3>
+    <p>
+        b1 <input type="radio" name="grupo1" value=1 id="radio1" checked>
+        b2 <input type="radio" name="grupo1" value=2 id="radio2">
+        b3 <input type="radio" name="grupo1" value=3 id="radio3">
+        b4 <input type="radio" name="grupo1" value=4 id="radio4">
+    </p>
+    <p id="radio_display"></p>
+    <hr>
+
+    <h2>Botones</h2>
+    <input type="button" value="Botón 1">
+    <input type="button" value="Botón 2">
+    <h2>Botones de imagen</h2>
+    <input type="image" src="panoramica-madrid-01.jpg" alt="Descripción de la imagen">
+    <h2>Botones de tipo submit</h2>
+    <button type="submit">Enviar</button>
+    <h2>Botones de tipo reset</h2>
+    <button type="reset">Restablecer</button>
+    <h2>Botones de verificación</h2>
+    <input type="checkbox">
+    <input type="checkbox" checked>
+    <h2>Botones de radio</h2>
+    <input type="radio" name="grupo1" checked>
+    <input type="radio" name="grupo1">
+    <input type="radio" name="grupo1">
+    <h2>Input Texto</h2>
+    <p> <input type="text" maxlength=30 size=20 placeholder="Nombre"> </p>
+    <p> <input type="text" maxlength=20 placeholder="máximo 20 caracteres"> </p>
+
+    <h2>Opciones</h2>
+    <label for="myBrowser">Elige un navegador de la lista:</label>
+    <input list="browsers" id="myBrowser" name="myBrowser" />
+    <datalist id="browsers">
+    <option value="Chrome"></option>
+    <option value="Firefox"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+    <option value="Microsoft Edge"></option>
+    </datalist>
+
+    <h2>Password</h2>
+    <p> <input type="password"> </p>
+
+    <h2>Números</h2>
+    <p> <input type="number"> </p>
+
+    <h2>Deslizadores</h2>
+    <p> <input type="range"> </p>
+
+</body>
+</html>
