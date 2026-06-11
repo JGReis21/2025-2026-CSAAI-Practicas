@@ -1,0 +1,197 @@
+/* ===================== GLOBAL ===================== */
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(120, 0, 150, 0.35), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(40, 0, 60, 0.4), transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(0, 0, 0, 0.8), transparent 60%),
+    linear-gradient(#0b0015, #000000);
+
+  color: #e8d9b5;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+/* ===================== TÍTULO ===================== */
+
+h1 {
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 60px;
+
+  color: #e6c77a;
+
+  text-shadow:
+    0 0 10px rgba(160, 100, 255, 0.6),
+    0 0 20px rgba(255, 215, 120, 0.3);
+
+  animation: glowGold 4s infinite alternate ease-in-out;
+}
+
+@keyframes glowGold {
+  from {
+    text-shadow: 0 0 8px rgba(160, 100, 255, 0.4);
+  }
+  to {
+    text-shadow: 0 0 18px rgba(255, 215, 120, 0.5);
+  }
+}
+
+/* ===================== CONTENEDOR ===================== */
+
+.container {
+  border: 2px solid #7a4da6;
+  box-shadow: 0 0 25px rgba(160, 100, 255, 0.3);
+
+  padding: 20px;
+  margin: 20px auto;
+
+  width: 420px;
+
+  background: rgba(10, 5, 20, 0.7);
+  border-radius: 15px;
+}
+
+/* ===================== SECRET GRID ===================== */
+
+.secret {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.secret div {
+  border: 2px solid #b08cff;
+
+  width: 60px;
+  height: 60px;
+
+  line-height: 60px;
+  font-size: 24px;
+
+  color: #f3e6c7;
+
+  box-shadow: 0 0 12px rgba(160, 100, 255, 0.3);
+}
+
+/* correct answer glow */
+.correct {
+  animation: glow 1.2s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px rgba(160,100,255,0.3); }
+  to { box-shadow: 0 0 30px rgba(255, 215, 120, 0.5); }
+}
+
+/* ===================== BOTONES ===================== */
+
+button {
+  background: linear-gradient(135deg, #3a1a5c, #1a0b2e);
+
+  color: #e6c77a;
+
+  border: 1px solid #7a4da6;
+  padding: 15px;
+  margin: 5px;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  box-shadow: 0 0 12px rgba(160, 100, 255, 0.2);
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #7a4da6;
+  color: #0b0015;
+  box-shadow: 0 0 18px rgba(255, 215, 120, 0.4);
+}
+
+button:disabled {
+  background: #111;
+  color: #555;
+  box-shadow: none;
+}
+
+/* ===================== GRID ===================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ===================== MENSAJES ===================== */
+
+#mensaje {
+  margin-top: 10px;
+  min-height: 20px;
+  color: #e8d9b5;
+}
+
+.msg-info { color: #c9a7ff; }
+.msg-ok { color: #ffd98a; }
+.msg-error { color: #ff7aa8; }
+.msg-stop { color: #ffffff; }
+
+/* ===================== EFECTOS ===================== */
+
+.magic {
+  animation: magicPulse 0.5s ease;
+}
+
+@keyframes magicPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); box-shadow: 0 0 25px rgba(160,100,255,0.5); }
+  100% { transform: scale(1); }
+}
+
+.explosion {
+  animation: explode 0.6s ease;
+}
+
+@keyframes explode {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4) rotate(5deg); }
+  100% { transform: scale(1); }
+}
+
+.used {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+
+.stop-activo {
+  background: #e6c77a !important;
+  color: #0b0015 !important;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 500px) {
+
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .secret div {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #mensaje {
+    font-size: 13px;
+  }
+}
