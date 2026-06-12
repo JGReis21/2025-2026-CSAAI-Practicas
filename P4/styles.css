@@ -1,0 +1,264 @@
+/* ===================== RESET + BASE ===================== */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+
+  /* arcane night gradient */
+  background: radial-gradient(circle at top, #1a0b2e, #0b0614, #05030a);
+  color: #f3e9ff;
+}
+
+/* ===================== APP ===================== */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===================== TOPBAR ===================== */
+
+.topbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+
+  /* enchanted glass */
+  background: rgba(30, 15, 50, 0.55);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 0 25px rgba(120, 60, 200, 0.25);
+}
+
+/* ===================== TITLE ===================== */
+
+.title h1 {
+  margin: 0;
+  font-size: 40px;
+
+  font-family: 'Cinzel', serif;
+
+  color: #e6d6ff;
+  text-shadow: 0 0 10px rgba(180, 120, 255, 0.5);
+}
+
+.subtitle {
+  color: #d2c2e8;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* ===================== STATS ===================== */
+
+.stats {
+  display: flex;
+  gap: 15px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  border-radius: 999px;
+
+  border: 1px solid rgba(212, 175, 55, 0.25);
+
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.value {
+  color: #d4af37; /* GOLD */
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* ===================== MAIN ===================== */
+
+.main {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* ===================== SIDEBAR ===================== */
+
+.sidebar {
+  width: 260px;
+}
+
+.card {
+  background: rgba(20, 10, 35, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+
+  border: 1px solid rgba(212, 175, 55, 0.2);
+
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* ===================== FORM ===================== */
+
+select {
+  width: 100%;
+  padding: 10px;
+
+  border-radius: 25px;
+  border: none;
+
+  background: rgba(255,255,255,0.1);
+  color: #f3e9ff;
+
+  margin-bottom: 10px;
+}
+
+/* ===================== BUTTONS ===================== */
+
+button {
+  width: 100%;
+  padding: 12px;
+
+  border-radius: 25px;
+  border: none;
+
+  margin-top: 10px;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* primary magical action */
+.primary {
+  background: linear-gradient(135deg, #6a2dbf, #d4af37);
+  color: white;
+
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+/* ===================== GAME ===================== */
+
+.game {
+  flex: 1;
+  text-align: center;
+}
+
+.center-info h2 {
+  font-size: 50px;
+  color: #e6d6ff;
+  margin: 0;
+
+  text-shadow: 0 0 10px rgba(120, 60, 200, 0.4);
+}
+
+#wordDisplay {
+  color: #d4af37;
+  font-size: 36px;
+  font-weight: 800;
+
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+/* ===================== GRID ===================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.cell {
+  height: 140px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  transition: 0.2s;
+
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+.emoji {
+  font-size: 45px;
+}
+
+.cell span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background: rgba(10, 5, 20, 0.7);
+
+  color: #f3e9ff;
+
+  border-radius: 0 0 20px 20px;
+
+  font-weight: 700;
+}
+
+/* ===================== ACTIVE ===================== */
+
+.active {
+  border: 2px solid #d4af37;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 768px) {
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cell {
+    height: 120px;
+  }
+
+  .center-info h2 {
+    font-size: 36px;
+  }
+
+  #wordDisplay {
+    font-size: 24px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

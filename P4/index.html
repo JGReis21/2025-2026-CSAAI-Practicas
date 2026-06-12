@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beat The Word</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Tipografía base -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- (Opcional para tu estilo futuro morado/gótico) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <div class="app">
+
+      <!-- TOPBAR -->
+      <header class="topbar">
+        <div class="title">
+          <h1>Beat The Word</h1>
+          <p class="subtitle">Observa la secuencia de imágenes que se iluminan en orden</p>
+        </div>
+
+        <div class="stats">
+          <div class="box">
+            <span class="label">Nivel</span>
+            <span id="level" class="value">1/5</span>
+          </div>
+
+          <div class="box">
+            <span class="label">Tiempo</span>
+            <span id="time" class="value">0s</span>
+          </div>
+
+          <div class="box">
+            <span class="label">Estado</span>
+            <span id="status" class="value">En espera</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <div class="main">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+          <div class="card">
+            <h2>Cómo funciona</h2>
+            <p>
+              El juego muestra una secuencia de imágenes en orden.
+              Cada nivel aumenta la velocidad y dificultad.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>Configuración</h2>
+
+            <label for="pairSelect">Secuencia</label>
+            <select id="pairSelect">
+              <option value="celestial">Sol / Luna</option>
+              <option value="astral">Astra / Lumen</option>
+              <option value="temporal">Futuro / Pasado</option>
+              <option value="alquimia">Oro / Plata</option>
+              <option value="ritual">Hechizo / Ritual</option>
+            </select>
+
+            <label for="levelSelect">Nivel inicial</label>
+            <select id="levelSelect">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+
+            <label>
+              <input type="checkbox" id="toggleLabels" checked />
+              Mostrar subtítulos
+            </label>
+
+            <button id="volumeToggle">Activar música</button>
+
+            <input
+              type="range"
+              id="volumeSlider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.5"
+              hidden
+            />
+          </div>
+
+          <button id="startBtn" class="primary">Comenzar</button>
+          <button id="stopBtn">Detener</button>
+
+        </aside>
+
+        <!-- GAME -->
+        <section class="game">
+          <div class="center-info">
+            <h2 id="round">1/5</h2>
+            <p id="wordDisplay">Pulsa comenzar</p>
+          </div>
+
+          <div class="grid" id="grid"></div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- AUDIO -->
+    <audio id="music" src="music.mp3" loop></audio>
+    <audio id="beatSound" src="beat.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
