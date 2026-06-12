@@ -5,8 +5,6 @@ Práctica 1: CV → https://jgreis21.github.io/2025-2026-CSAAI-Practicas/P1/
 
 Práctica 2: ¡Boom! → https://jgreis21.github.io/2025-2026-CSAAI-Practicas/P2/
 
-Práctica 3: Invasión Alienígena →
-Práctica 4: Beat the World →
-Práctica 5: Bot League →
+Práctica 3: Invasión Alienígena → https://jgreis21.github.io/2025-2026-CSAAI-Practicas/P3/
 
 Joana Gabriela Reis González
