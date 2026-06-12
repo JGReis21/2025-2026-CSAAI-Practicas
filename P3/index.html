@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Invasión Alienígena</title>
+
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Fuentes más místicas + sci-fi elegante -->
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Uncial+Antiqua&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h1>Invasión Alienígena</h1>
+
+		<h2 class="subtitle">
+			Episodio XXI — Defensa de Andrómeda M31
+		</h2>
+
+		<div class="hud">
+
+			<div id="score">
+				Puntuación: 0
+			</div>
+
+			<div id="lives">
+				<!-- me parecía más interesante “vidas de la flota” -->
+				🛸🛸🛸
+			</div>
+
+			<div id="energyBar">
+				<div id="energyFill"></div>
+			</div>
+
+		</div>
+
+		<canvas id="gameCanvas"></canvas>
+
+	</div>
+
+	<!-- OVERLAY FINAL / RITUAL DE RESULTADO -->
+	<div id="overlay" class="hidden">
+
+		<div id="gameMessage"></div>
+
+	</div>
+
+	<script src="game.js"></script>
+
+</body>
+
+</html>

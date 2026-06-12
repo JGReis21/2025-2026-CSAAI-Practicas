@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+
+    background:
+        radial-gradient(circle at top, rgba(120, 80, 255, 0.25), transparent 40%),
+        radial-gradient(circle at 70% 30%, rgba(255, 215, 120, 0.08), transparent 45%),
+        radial-gradient(circle at bottom, rgba(0, 0, 0, 0.9), transparent 60%),
+        linear-gradient(#05010f, #000000);
+
+    color: #e8ddff;
+
+    font-family: 'Cinzel', serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    filter: brightness(1.1) saturate(1.1);
+}
+
+/* ===================== FIN DEL JUEGO ===================== */
+
+body.game-end {
+    filter: brightness(0.5) saturate(0.8);
+    transition: 0.6s;
+}
+
+/* ===================== CONTENEDOR ===================== */
+
+.container {
+    text-align: center;
+}
+
+/* ===================== TÍTULO ===================== */
+
+h1 {
+    font-size: 42px;
+
+    font-family: 'Uncial Antiqua', cursive;
+
+    color: #e6c77a;
+
+    text-shadow:
+        0 0 10px rgba(160, 100, 255, 0.6),
+        0 0 25px rgba(255, 215, 120, 0.2);
+}
+
+/* ===================== SUBTÍTULO ===================== */
+
+.subtitle {
+    font-size: 16px;
+    opacity: 0.85;
+    margin-bottom: 10px;
+    color: #c9b6ff;
+}
+
+/* ===================== CANVAS ===================== */
+
+canvas {
+    border: 2px solid #7a4da6;
+
+    box-shadow:
+        0 0 20px rgba(160,100,255,0.4),
+        0 0 60px rgba(255,215,120,0.08);
+
+    background: linear-gradient(#050014, #02010a);
+
+    display: block;
+    margin: auto;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* ===================== HUD ===================== */
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+
+    color: #e8ddff;
+
+    text-shadow: 0 0 10px rgba(160,100,255,0.3);
+}
+
+/* ===================== ENERGÍA ===================== */
+
+#energyBar {
+    width: 150px;
+    height: 15px;
+
+    border: 1px solid #b08cff;
+
+    background: rgba(255,255,255,0.08);
+
+    box-shadow: 0 0 10px rgba(160,100,255,0.3);
+}
+
+#energyFill {
+    height: 100%;
+
+    background: linear-gradient(90deg, #7a4da6, #e6c77a);
+
+    width: 100%;
+    transition: 0.2s;
+
+    box-shadow: 0 0 10px rgba(255,215,120,0.3);
+}
+
+/* ===================== OVERLAY ===================== */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.85);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+/* ===================== MENSAJE CENTRAL ===================== */
+
+#gameMessage {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+
+    font-family: 'Uncial Antiqua', cursive;
+
+    animation: pulse 1.5s infinite alternate;
+
+    color: #e6c77a;
+}
+
+/* ===================== VICTORIA ===================== */
+
+.victory {
+    color: #e6c77a;
+
+    text-shadow:
+        0 0 10px rgba(255, 215, 120, 0.5),
+        0 0 20px rgba(160,100,255,0.4);
+}
+
+/* ===================== DERROTA ===================== */
+
+.gameover {
+    color: #ff7aa8;
+
+    text-shadow:
+        0 0 10px rgba(255, 122, 168, 0.4),
+        0 0 20px rgba(160,100,255,0.3);
+}
+
+/* ===================== ANIMACIÓN ===================== */
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+
+/* ===================== OCULTO ===================== */
+
+.hidden {
+    display: none !important;
+}
