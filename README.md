@@ -9,6 +9,4 @@ Práctica 3: Invasión Alienígena → https://jgreis21.github.io/2025-2026-CSAA
 
 Práctica 4: Beat the Word → https://jgreis21.github.io/2025-2026-CSAAI-Practicas/P4/
 
-Práctica 5: Bot League → 
-
 Joana Gabriela Reis González
